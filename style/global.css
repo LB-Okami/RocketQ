@@ -58,6 +58,8 @@ body, button, input, textarea {
     border-width: 0;
 }
 
+/* Header */
+
 .content header {
     width: 80%;
     margin: 3.5rem auto;
@@ -87,6 +89,16 @@ button, .button {
 
     cursor: pointer;
     transition: 0.19s;
+}
+
+button.red, .button.red {
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey, .button.grey {
+    background: var(--greyLight);
+    color: var(--greyDark);
 }
 
 button:hover, .button:hover {

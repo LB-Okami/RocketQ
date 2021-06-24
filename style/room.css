@@ -112,7 +112,7 @@
 
 .question-wrapper .question-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
@@ -122,11 +122,13 @@
     padding: 1.4rem;
 }
 
-.question-wrapper .question-content .question p {
+.question-wrapper .question-content p {
     display: flex;
     align-items: center;
     color: var(--black);
     margin-left: 1.6rem;
+    word-break: break-word;
+    min-height: 5.5rem;
 }
 
 .question-wrapper .actions > a > img {
@@ -153,4 +155,8 @@
 
 .question-wrapper.read {
     background: var(--greyLight);
+}
+
+.question-wrapper.read .question-content .user {
+    background: var(--greyBlue);
 }

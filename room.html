@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocket.Q - Perguntas e Respostas</title>
     <link rel="stylesheet" href="style/room.css">
+    <link rel="stylesheet" href="style/modal.css">
     <link rel="stylesheet" href="style/global.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -102,15 +104,16 @@
                             </a>
                         </div>
                     </div>
-                    
-                    <div class="question-wrapper read">
+
+                    <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
                                 <img src="assets/avatar.svg" alt="">
                             </div>
                             
                             <div class="question">
-                                <p>O que é Python e onde pode ser aplicado?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt qui, magnam delectus at aliquid repellendus cum ut eligendi aliquam in mollitia voluptates esse. Inventore molestias labore neque eveniet doloribus minima?
+                                Fuga, eius. Minus fugiat obcaecati doloremque laudantium expedita, distinctio neque inventore dolore optio dolorum repellendus eligendi dignissimos est? Vero minus consequatur fugiat, velit dolores deleniti nisi quod? Dolorem, placeat dolorum.</p>
                             </div>
                         </div>
                         
@@ -127,9 +130,50 @@
                         </div>
                     </div>
                     
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/avatar.svg" alt="">
+                            </div>
+                            
+                            <div class="question">
+                                <p>O que é Python e onde pode ser aplicado?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="actions">
+                            
+                            <a href="" class="delete">
+                                <img src="assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
         </main>
     </div>
+
+    <!-- Modal -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir pergunta</h2>
+            <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+            <form action="#">
+                <label class="sr-only" for-id='password'>Digite sua senha</label>
+                <input type="password" name="password" placeholder="Digite sua senha" id="password">
+
+                <div class="buttons">
+                    <div class="button grey">
+                        Cancelar
+                    </div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
