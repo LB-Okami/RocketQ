@@ -25,6 +25,13 @@ deleteButtons.forEach(button => {
 function handleClick(event, check = true) {
     event.preventDefault()
 
+    const roomID = document.querySelector('#room-id').dataset.id
+    const slug = check ? "check" : "delete"
+    const questionId = event.target.dataset.id
+
+    const form = document.querySelector('.modal form')
+    form.setAttribute('action', `question/${roomID}/${questionId}/${slug}`)
+
     const text =  check ? 'Marcar como lida' : 'Excluir'
     // ? true | : false
     modalTitle.innerHTML = `${text} esta pergunta`
