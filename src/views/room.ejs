@@ -11,6 +11,7 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/89/7c/d2/897cd2ca1be8642a2dc335c098c6e73a.png" type="image/x-icon">
     
 </head>
 <body>
@@ -21,11 +22,15 @@
                 <img src="/images/logo.svg" alt="Rocket.Q logo">
             </a>
             
-            
+            <!-- Input invisível -->
+            <div class="room-inv">
+                <input type="text" name="id-inv" id="id-inv" value="<%= roomId %>" class="sr-only">
+            </div>
+
             <div class="buttons">
-                <div class="button outlined" id="room-id" data-id="<%= roomId %>">
+                <div class="button outlined" id="room-id" data-id="<%= roomId %>" onclick="copy()">
                     #<%= roomId %>
-                    <img src="/images/copy.svg" alt="copiar código da sala">
+                    <img src="/images/copy.svg" alt="copiar código da sala" >
                 </div>
                 
                 <a href="/create-pass" class="button">
@@ -138,5 +143,6 @@
             </div>
             
             <script src="/scripts/main.js" defer type='module'></script>
+            <script src="/scripts/roomFunc.js"></script>
         </body>
         </html>
